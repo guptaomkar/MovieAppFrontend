@@ -6,7 +6,7 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data:[],
+            data: [],
             flag: false
         };
     }
@@ -29,7 +29,7 @@ class Home extends Component {
         if (!flag) {
             return (
                 <div>
-                    <h1>Please wait some data....</h1>
+                   <img src={require('./images/Spinner.gif')} alt="" className="loading"/>
                 </div>
             );
         }
@@ -37,12 +37,17 @@ class Home extends Component {
             <div className="App">
                 <h1>Marvel movie List</h1>  {
                     data.map((item) => (
-                        <div className="movieCard">
-                            <b>Movie Name:</b> {item.movieName},
-                            <br></br>
-                            <b>release Date:</b> {item.releaseDate}
+                        <div className="movieMainCard">
+                            <img src={item.image} className="images"/>
+                            <div className="movieCard">
+                                <b>Movie Name:</b> {item.movieName},
+                                <br></br>
+                                <b>release Date:</b> {item.releaseDate}
+                                <a href={item.trailer}>
+                                <button className="trailer-btn">Watch Trailer</button>
+                                </a>
+                            </div>
                         </div>
-
                         
                     ))
                 }
