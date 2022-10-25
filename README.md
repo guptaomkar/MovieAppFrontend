@@ -1,6 +1,13 @@
 # Getting Started with Create React App
 
+Until backend start it will show the loading image So for the data you need to start the backend of application which is return in node for this refere MovieAppBackend repository.
+![Capture](https://user-images.githubusercontent.com/40142494/197818297-84241821-9f05-4aa9-90fd-5a4bf081c720.PNG)
+
+
+After getting MovieAppBackend code star it using this command: --->node app.js
+which will start sending data on Port 5000. And React app will start on 3000 but collect data from 5000 port.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Capture2](https://user-images.githubusercontent.com/40142494/197818231-81ed948c-399b-43a4-95b0-b4a5c13d5b56.PNG)
 
 ## Available Scripts
 
